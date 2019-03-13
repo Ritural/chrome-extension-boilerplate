@@ -1,7 +1,7 @@
 {
-  "name": "Greg's Magic Issue Revealer",
-  "version": "1.0",
-  "description": "Extension for Trello to show more details about Sifter issues that have been linked.",
+  "name": "Chrome Extension Boilerplate",
+  "version": "0.1",
+  "description": "A boilerplate using the Chrome Extension example consisting of Webpack, Typescript, React, and SCSS.",
   "manifest_version": 2,
   "permissions": [
     "activeTab",

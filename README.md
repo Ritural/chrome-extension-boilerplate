@@ -1,8 +1,8 @@
-# Trello Sifter Chrome Extension
+# Chrome Extension Boilerplate
 
-This extension is designed to provide more details about Sifter tickets that are linked in Trello cards.
+This extension is designed to provide a starting point for developing Chrome Extensions.
 
-The current extension follows the Chrome extensions [getting started](https://developer.chrome.com/extensions/getstarted) guide.
+The current implementation follows the Chrome extensions [getting started](https://developer.chrome.com/extensions/getstarted) guide.
 
 ## Installation
 

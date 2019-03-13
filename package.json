@@ -1,7 +1,7 @@
 {
-  "name": "trello-sifter-chrome-extension",
-  "version": "1.0.0",
-  "description": "A Chrome extension for Trello to provide more visibility on linked Sifter tickets",
+  "name": "chrome-extension-boilerplate",
+  "version": "0.0.1",
+  "description": "A boilerplate using the Chrome Extension example consisting of Webpack, Typescript, React, and SCSS.",
   "main": "index.js",
   "author": "Kallan Jones",
   "license": "MIT",
