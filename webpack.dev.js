@@ -3,7 +3,7 @@ const common = require('./webpack.config');
 
 module.exports = merge(common, {
   mode: "development",
-  devtool: 'source-map', // Sets up sourcemaps to be used in the browser
+  devtool: 'inline-source-map', // Sets up sourcemaps to be used in the browser
 
   watch: true,
   watchOptions: {
