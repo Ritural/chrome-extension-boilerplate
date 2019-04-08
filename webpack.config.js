@@ -5,10 +5,6 @@ const isProduction = process.env.NODE_ENV === 'production';
 const VERSION = JSON.stringify(require('./package.json').version);
 
 module.exports = {
-  // These could be moved to a webpack.dev.js config
-  mode: "development",
-  devtool: 'source-map', // Sets up sourcemaps to be used in the browser
-  
   entry: {
     options: './src/app/options.tsx',
     popup: './src/app/popup.tsx',

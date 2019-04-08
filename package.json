@@ -6,7 +6,8 @@
   "author": "Kallan Jones",
   "license": "MIT",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
     "react": "^16.8.4",
