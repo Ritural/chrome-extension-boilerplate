@@ -1,7 +1,8 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom"
 
-import "../styles/options.scss"
+import 'components/options.html';
+import 'styles/options.scss';
 
 class Options extends React.Component {
   handleButtonClick = (color: string) => {

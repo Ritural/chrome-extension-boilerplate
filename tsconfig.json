@@ -29,6 +29,12 @@
       "es2015.promise"
     ],
   },
+  "paths": {
+    "components/*": [ "src/components/*" ],
+    "styles/*": [ "src/styles/*" ],
+    "app/*": ["src/*"],
+    "public/*": [ "public/*" ]
+  },
   "exclude": [
     "node_modules"
   ],

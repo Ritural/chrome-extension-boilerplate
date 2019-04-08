@@ -1,7 +1,8 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom"
 
-import "../styles/popup.scss"
+import "components/popup.html";
+import "styles/popup.scss"
 
 interface IState {
   color?: string;

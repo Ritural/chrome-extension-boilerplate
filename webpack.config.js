@@ -6,18 +6,24 @@ const VERSION = JSON.stringify(require('./package.json').version);
 
 module.exports = {
   entry: {
-    options: './src/app/options.tsx',
-    popup: './src/app/popup.tsx',
-    background: './src/app/background.ts',
+    options: './src/components/options.tsx',
+    popup: './src/components/popup.tsx',
+    background: './src/components/background.ts',
   },
 
   output: {
-    path: path.resolve(__dirname, 'dist/js'),
-    filename: '[name].js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'js/[name].js',
   },
 
   resolve: {
-    extensions: [".ts", ".tsx", ".js"],
+    alias: {
+      components: path.resolve(__dirname, 'src/components'),
+      styles: path.resolve(__dirname, 'src/styles'),
+      app: path.resolve(__dirname, 'src'),
+      public: path.resolve(__dirname, 'public'),
+    },
+    extensions: [".ts", ".tsx", ".js", ".html"],
   },
 
   module: {
@@ -60,6 +66,46 @@ module.exports = {
               sourceMap: true,
             },
           },
+        ],
+      },
+      // Handle html files
+      {
+        exclude: /node_modules/,
+        test: /\.(html)$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              name: '[name].[ext]',
+            }
+          },
+        ],
+      },
+      // Handle json files
+      {
+        type: 'javascript/auto',
+        exclude: /node_modules/,
+        test: /\.(json)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+            }
+          }
+        ],
+      },
+      // Handle images
+      {
+        exclude: /node_modules/,
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[name].[ext]',
+            }
+          }
         ],
       },
     ],
