@@ -2,9 +2,9 @@
 
 This extension is designed to provide a starting point for developing Chrome Extensions.
 
-This is a boilerplate using the Chrome Extension example consisting of Webpack, Typescript, React, and SCSS.
+This is a boilerplate using the Google Chrome Extension example but I've added Webpack, Typescript, React, and SCSS.
 
-The current implementation follows the Chrome extensions [getting started](https://developer.chrome.com/extensions/getstarted) guide.
+It currently has the same behaviour as the Google Chrome extensions [getting started](https://developer.chrome.com/extensions/getstarted) guide.
 
 ## Installation
 
@@ -21,11 +21,10 @@ The current implementation follows the Chrome extensions [getting started](https
 2. However, you will need to press the refresh button for the Chrome extension in the [chrome extensions page](chrome://extensions/)
 3. You will _probably_ need to refresh the web page you're working on.
 
-_NOTE:_ You may need to stop and start your build server (webpack) if you change your manifest file. It didn't appear to automatically rebuild - this may not be applicable anymore 🤷‍♂️
+_NOTE:_ You may need to stop and start your build server (webpack) if you change your manifest.json file. It doesn't appear to automatically rebuild
 
 ## Helpful Links
-## Helpful Links
 
-[Creating a Chrome Extension](https://medium.freecodecamp.org/how-to-create-a-chrome-extension-part-1-ad2a3a77541)
-[Chrome Extension Boilerplate Example](https://github.com/duo-labs/chrome-extension-boilerplate)
-[React Chrome Extension Boilerplate Example](https://github.com/jhen0409/react-chrome-extension-boilerplate)
+- [Creating a Chrome Extension](https://medium.freecodecamp.org/how-to-create-a-chrome-extension-part-1-ad2a3a77541)
+- [Chrome Extension Boilerplate Example](https://github.com/duo-labs/chrome-extension-boilerplate)
+- [React Chrome Extension Boilerplate Example](https://github.com/jhen0409/react-chrome-extension-boilerplate)
